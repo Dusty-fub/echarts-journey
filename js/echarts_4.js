@@ -66,6 +66,7 @@ loadMoreBtn.addEventListener("click", () => {
   }
   myChart.showLoading();
   isLoading = true;
+  //异步
   setTimeout(() => {
     const key = "羽绒服";
     const value = 18;

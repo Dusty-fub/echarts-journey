@@ -1,3 +1,5 @@
+//移动端适配
+
 var echarts = require("echarts");
 const main = document.getElementById("main");
 var myChart = echarts.init(main, "dark");
@@ -84,8 +86,10 @@ loadMoreBtn.addEventListener("click", () => {
   }, 1500);
 });
 
-//点击事件
 myChart.on("click", (e) => {
   console.log(e);
   window.open(`https://baidu.com/s?wd=${e.name}`);
 });
+
+//这个和echarts5好像没有区别
+//移动端适配是没做完？
